@@ -52,7 +52,7 @@ title::after{
 }
 .input-box label{
     font-size: 1.25rem;
-     color:#8c8306
+     color:#8c8306;
      font-weight: 500;
 }
 
@@ -68,17 +68,17 @@ title::after{
     margin-top: 3px;
 }
 .input-field spam,
-.input-field i{
-    color:#8c8306
+.input-field i{ /* simbolo da unidade de medida*/
+    color:#8c8306;
     font-size:1.3rem;
     padding:0 0.10rem;
 }
-.input-field input{
+.input-field input{/*  munmeros inseridos*/
     background-color: #dcd979;
     border: none;
-    width: 50%;
-    font-size: 1.30rem;
-    color:#8c8306
+    width: 60%;
+    font-size: 2.30rem;
+    color:#29270b;
     padding:0 0.10rem;
 
 }
@@ -90,16 +90,53 @@ title::after{
 .input-field input:focus{
     outline: none;
 }
-#calculate{
+#calculate{ /*botao de calcular*/
     border:none;
     font-size: 1.25rem;
     font-weight: bold;
-    backgroud-color: #dcd979;
+    background-color: #dcd979;
     color:#8a7b06;
     padding: 0.5rem 0;
     cursor:pointer;
 }
 #result{
+    display:flex;
+    gap:2rem;
+    align-items:center;
+    border-top: 3px solid #5d5705;
+    padding:0.75rem 0;
 
 }
-/////////////// minuto 15:56
+#bmi{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    font-size: 2.65rem;
+
+}
+#bmi span{
+    font-size: 1.025rem;
+    font-weight: bold;
+    color:#8c8306
+}
+#description{
+    width:10.5rem;
+}
+#more_info{
+   text-align: center;
+   border-top: 2px solid #8c8306;
+   padding-top: 1.5rem;
+   font-size: 1.25rem;
+  
+}
+#more_info a{
+    text-decoration: none;
+    display:flex;
+   color:#3c4707
+}
+#more_info a:hover{
+    color:#000000
+}
+.esconder{
+    display:none;
+}
